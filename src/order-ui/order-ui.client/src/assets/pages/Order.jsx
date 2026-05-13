@@ -12,15 +12,32 @@ function Order() {
 
   const contents = order === null
         ? <p>Не удалось найти данный заказ</p>
-        : <tr key={order.id}>
-              <td>{order.id}</td>
-              <td>{order.cityFrom}</td>
-              <td>{order.adressFrom}</td>
-              <td>{order.cityTo}</td>
-              <td>{order.adressTo}</td>
-              <td>{order.weight}</td>
-              <td>{order.pickupDate}</td>
-          </tr>
+        : <table className="table table-striped" aria-labelledby="tableLabel">
+        <thead>
+                <tr>
+                    <th>Номер заказа</th>
+                    <th>Город отправителя</th>
+                    <th>Адрес отправителя</th>
+                    <th>Город получателя</th>
+                    <th>Адрес получателя</th>
+                    <th>Вес груза</th>
+                    <th>Дата забора груза</th>
+                </tr>
+            </thead>
+            <tbody>
+        <tr key={order.id}>
+                    <td>{order.id}</td>
+                    <td>{order.cityFrom}</td>
+                    <td>{order.adressFrom}</td>
+                    <td>{order.cityTo}</td>
+                    <td>{order.adressTo}</td>
+                    <td>{order.weight}</td>
+                    <td>{order.pickupDate}</td>
+                </tr>
+            </tbody>
+      </table>;
+
+
     return (
         <div>
             <p>Информация о заказе</p>
