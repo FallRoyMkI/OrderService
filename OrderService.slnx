@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/OrderService.ApiHost/OrderService.ApiHost.csproj" Id="acd6b7c5-6927-46aa-a2cb-41aa5588f506" />
+    <Project Path="src/OrderService.Application/OrderService.Application.csproj" Id="731fb3b1-297c-4acd-ae65-2a3bddad1859" />
+    <Project Path="src/OrderService.Infrastructure/OrderService.Infrastructure.csproj" Id="164d5fb9-a985-48eb-aed7-51ad883dabc4" />
+	<Project Path="src/order-ui/order-ui.client/order-ui.client.esproj">    
+		<Build />
+		<Deploy />
+	</Project>
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OrderService.Tests/OrderService.Tests.csproj" Id="3eafb8df-82e9-41e9-aec4-cea23ac21377" />
+  </Folder>
+</Solution>
